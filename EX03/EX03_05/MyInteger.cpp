@@ -1,5 +1,9 @@
 #include "MyInteger.h"
 #include <sstream>
+
+//PT -- Notice that there's some copy/paste (e.g. two versions of isPrime()). Could you use the static function in the member function?
+// 20/20
+
 MyInteger::MyInteger()
 {
 	value = 0;
