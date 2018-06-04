@@ -26,7 +26,7 @@ void Theater::AddMovie(Movie& Movie,int m)
 }//Add a movie at a specific time
 string Theater::GetMovieForHour(int hour)
 {
-	for (int i = 0; i <= 11; i++)
+	for (int i = 0; i < 11; i++)
 	{
 		if (times[i] == hour)
 			return (movies[i]);
@@ -37,7 +37,7 @@ string Theater::GetMovieForHour(int hour)
 								  // Return "" if none are upcoming
 int Theater::GetShowTimeForGenre(string Genre)
 {
-	for (int i = 0; i <= 11; i++)
+	for (int i = 0; i < 11; i++)
 	{
 		if (genres[i] == Genre)
 			return (times[i]);
