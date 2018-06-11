@@ -12,7 +12,7 @@ int main()
 
 int small(int* ary)
 {
-	int largest=0;
+	int largest=0;	//I search for the largest first so that I don't ever use an initializer that's too small
 	for (int i = 0; i < 8; i++)
 		if (ary[i] > largest)
 			largest = ary[i];
