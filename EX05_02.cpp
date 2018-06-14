@@ -19,6 +19,21 @@ int main()
 	return 0;
 }
 
+//PT -- good, but there's a more efficient way. Once you find one thing out of order, return false.
+//      also, I'd name the variable sorted, not boolean.
+/*
+template<typename T>
+bool isSorted(const T list[], int size)
+{
+	int boolean = 0;
+	for (int i = 0; i < size - 1; i++)
+	{
+		if (list[i] > list[i+1])
+			return false;
+	}
+	return true;
+}*/
+
 template<typename T>
 bool isSorted(const T list[], int size)
 {
