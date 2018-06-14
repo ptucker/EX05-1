@@ -80,6 +80,8 @@ void account::withdraw(double cash, string descrip)
 
 void account::deposit(double cash,string descrip)
 {
+	//PT -- should be 'D', since this is a deposit
+	// -1
 	transaction beans('W', cash, balance + cash, descrip);
 	trans.push_back(beans);
 	balance = balance + cash;
