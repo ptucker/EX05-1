@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+// 20/20
+
 template <typename T>
 vector<T>::vector()
 {
@@ -69,6 +71,7 @@ void vector<T>::clear()
 	size = 0;
 }
 
+//PT -- probably should pass by reference here
 template <typename T>
 void vector<T>::swap(vector otherEle)
 {
@@ -96,6 +99,7 @@ void vector<T>::ensureCapacity()	//doubles capacity each time the array size att
 {
 	if (size >= capacity)
 	{
+		//PT -- Why not just call doubleCapacity here?
 		T* old = elements;
 		capacity = 2 * size;
 		elements = new T[size * 2];
