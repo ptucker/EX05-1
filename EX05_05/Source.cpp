@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+// 19/20
+
 int main()
 {
 	account george(1122,1000,"George");
